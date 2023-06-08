@@ -4,7 +4,8 @@
 GameManager* GameManager::instance = nullptr;
 
 GameManager::GameManager() {
-	
+	running = true;
+	paused = false;
 }
 
 GameManager::~GameManager() {
@@ -23,3 +24,14 @@ void GameManager::RunApplication() {
 	DebugUtils::Log("Application is running");
 }
 
+bool GameManager::TogglePause() {
+	return paused = !paused;
+}
+
+bool GameManager::IsPaused() {
+	return paused;
+}
+
+bool GameManager::IsRunning() {
+	return running;
+}

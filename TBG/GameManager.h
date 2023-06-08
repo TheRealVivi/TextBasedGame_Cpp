@@ -7,6 +7,9 @@ public:
     ~GameManager();
     static GameManager* Get();
     void RunApplication();
+    bool TogglePause();
+    bool IsPaused();
+    bool IsRunning();
 private:
     static GameManager* instance;
     bool paused = false;
