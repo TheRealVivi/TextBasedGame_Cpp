@@ -2,11 +2,13 @@
 //
 
 #include "GameManager.h"
+#include "SoundManager.h"
 
 
 int main()
 {
     GameManager::Get()->RunApplication();
+    AudioManager::Get()->PlayAudio();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

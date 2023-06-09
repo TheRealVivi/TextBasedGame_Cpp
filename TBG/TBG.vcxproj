@@ -141,12 +141,16 @@
   <ItemGroup>
     <ClCompile Include="DebugUtils.cpp" />
     <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="TBG.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DebugUtils.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Manager.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SoundManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TBG.rc" />

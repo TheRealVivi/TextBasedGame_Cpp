@@ -24,14 +24,3 @@ void GameManager::RunApplication() {
 	DebugUtils::Log("Application is running");
 }
 
-bool GameManager::TogglePause() {
-	return paused = !paused;
-}
-
-bool GameManager::IsPaused() {
-	return paused;
-}
-
-bool GameManager::IsRunning() {
-	return running;
-}
