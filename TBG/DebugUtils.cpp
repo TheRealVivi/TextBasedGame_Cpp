@@ -5,21 +5,21 @@ namespace DebugUtils
 {
 	void Log(const std::string &category, Severity severity, const std::string &message)
 	{
+		std::string output;
 		switch (severity)
 		{
 		case Info:
-			std::cout << "[" << category << "] "
-					  << "[INFO] ";
+			output = "[" + category + "] " + "[INFO] " + message;
+			std::cout << output << std::endl;
 			break;
 		case Warning:
-			std::cout << YELLOW << "[" << category << "] "
-					  << "[WARNING] ";
+			output = "[" + category + "] " + "[WARNING] " + message;
+			std::cout << YELLOW << output << RESET << std::endl;
 			break;
 		case Error:
-			std::cout << RED << "[" << category << "] "
-					  << "[ERROR] ";
+			output = "[" + category + "] " + "[ERROR] " + message;
+			std::cout << RED << output << RESET << std::endl;
 			break;
 		}
-		std::cout << message << RESET << std::endl;
 	}
 }
