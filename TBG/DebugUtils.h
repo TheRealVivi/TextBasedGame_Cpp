@@ -22,14 +22,14 @@
 // Note: If you don't use RESET the color will remain changed until the next time you use a color code.
 // source: https://stackoverflow.com/questions/9158150/colored-output-in-c
 
+enum Severity
+{
+	Info,
+	Warning,
+	Error
+};
+
 namespace DebugUtils
 {
-	enum Severity
-	{
-		Info,
-		Warning,
-		Error
-	};
 	void Log(const std::string &category, Severity severity, const std::string &message);
 }
-
