@@ -5,21 +5,22 @@ namespace DebugUtils
 {
 	void Log(const std::string &category, Severity severity, const std::string &message)
 	{
-		std::string output;
+		std::ostringstream log;
 		switch (severity)
 		{
 		case Info:
-			output = "[" + category + "] " + "[INFO] " + message;
-			std::cout << output << std::endl;
+			log << "[" << category + "] "
+				<< "[INFO] " << message;
 			break;
 		case Warning:
-			output = "[" + category + "] " + "[WARNING] " + message;
-			std::cout << YELLOW << output << RESET << std::endl;
+			log << YELLOW << "[" << category << "] "
+				<< "[WARNING] " << message << RESET;
 			break;
 		case Error:
-			output = "[" + category + "] " + "[ERROR] " + message;
-			std::cout << RED << output << RESET << std::endl;
+			log << RED << "[" << category << "] "
+				<< "[ERROR] " << message << RESET;
 			break;
 		}
+		std::cout << log.str() << std::endl;
 	}
 }
