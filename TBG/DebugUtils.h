@@ -21,7 +21,6 @@
 #define BOLDCYAN "\033[1m\033[36m"	  /* Bold Cyan */
 #define BOLDWHITE "\033[1m\033[37m"	  /* Bold White */
 // Note: If you don't use RESET the color will remain changed until the next time you use a color code.
-// source: https://stackoverflow.com/questions/9158150/colored-output-in-c
 
 enum Severity
 {
@@ -32,5 +31,5 @@ enum Severity
 
 namespace DebugUtils
 {
-	void Log(const std::string &category, Severity severity, const std::string &message);
+	void Log(const std::string& category, Severity severity, const std::string& message);
 }

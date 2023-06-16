@@ -21,6 +21,6 @@ GameManager* GameManager::Get() {
 }
 
 void GameManager::RunApplication() {
-	DebugUtils::Log("Application is running");
+	DebugUtils::Log("test", Severity::Warning, "Application is running");
 }
 

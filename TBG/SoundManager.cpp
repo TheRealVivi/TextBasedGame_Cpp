@@ -1,4 +1,5 @@
 #include "SoundManager.h"
+#include "GameManager.h"
 #include "DebugUtils.h"
 
 AudioManager* AudioManager::instance = nullptr;
@@ -21,7 +22,7 @@ AudioManager* AudioManager::Get() {
 }
 
 void AudioManager::PlayAudio() {
-	DebugUtils::Log("Hello, this is the audio manager");
+	DebugUtils::Log("AudioManager", Severity::Info, "Hello, this is the audio manager");
 	GameManager::Get()->RunApplication();
 	//mciSendString("open \"*.mp3\" type mpegvideo alias mp3", NULL, 0, NULL);
 

@@ -5,7 +5,7 @@
 //these two headers are already included in the <Windows.h> header
 //#pragma comment(lib, "Winmm.lib")
 
-#include "GameManager.h"
+#include "Manager.h"
 
 class AudioManager : public Manager
 {
