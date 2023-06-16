@@ -1,9 +1,10 @@
 #include "DebugUtils.h"
+#include "ColorText.h"
 #include <iostream>
 
 namespace DebugUtils
 {
-	void Log(const std::string &category, Severity severity, const std::string &message)
+	void Log(const std::string& category, Severity severity, const std::string& message)
 	{
 		std::ostringstream log;
 		switch (severity)

@@ -146,6 +146,7 @@
     <ClCompile Include="TBG.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ColorText.h" />
     <ClInclude Include="DebugUtils.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="Manager.h" />
